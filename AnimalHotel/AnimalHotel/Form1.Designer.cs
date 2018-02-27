@@ -70,6 +70,7 @@
             this.button_Add_Food = new System.Windows.Forms.Button();
             this.button_Add_Staff = new System.Windows.Forms.Button();
             this.groupBox_Food_Details = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.AddButton.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -473,6 +474,7 @@
             // 
             // groupBox_Food_Details
             // 
+            this.groupBox_Food_Details.Controls.Add(this.listBox1);
             this.groupBox_Food_Details.Controls.Add(this.button_Add_Food);
             this.groupBox_Food_Details.Controls.Add(this.button_Add_Staff);
             this.groupBox_Food_Details.Location = new System.Drawing.Point(789, 23);
@@ -481,6 +483,14 @@
             this.groupBox_Food_Details.TabIndex = 25;
             this.groupBox_Food_Details.TabStop = false;
             this.groupBox_Food_Details.Text = "Food details";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(11, 20);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 25;
             // 
             // Form1
             // 
@@ -564,6 +574,7 @@
         private System.Windows.Forms.Button button_Add_Food;
         private System.Windows.Forms.Button button_Add_Staff;
         private System.Windows.Forms.GroupBox groupBox_Food_Details;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

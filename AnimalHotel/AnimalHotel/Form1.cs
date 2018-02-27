@@ -97,6 +97,15 @@ namespace AnimalHotel
         {
             listBox_Animals.Items.Clear();
             listBox_Animals.Items.AddRange(m_anim_mngr.ToStringArray());
+            List<String> list = new List<string>();
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+            for (int i = 0; i < listBox_Animals.Items.Count; i++)
+            {
+                Console.WriteLine(listBox_Animals.Items[i]);
+            }
         }
 
         // Change the animals combobox after what is chosen Mammals or Birds

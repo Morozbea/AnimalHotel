@@ -70,6 +70,7 @@
             this.Food_ListBox.Name = "Food_ListBox";
             this.Food_ListBox.Size = new System.Drawing.Size(311, 95);
             this.Food_ListBox.TabIndex = 7;
+            this.Food_ListBox.SelectedIndexChanged += new System.EventHandler(this.Food_ListBox_SelectedIndexChanged);
             // 
             // Delete_Food_Button
             // 
