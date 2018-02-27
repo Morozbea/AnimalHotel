@@ -68,3 +68,15 @@ C:\Users\moroz\Desktop\AnimalHotelAssig3\AnimalHotel\bin\Debug\AnimalHotel.pdb
 C:\Users\moroz\Desktop\AnimalHotelAssig3\AnimalHotel\obj\Debug\AnimalHotel.FoodForm.resources
 C:\Users\moroz\Desktop\AnimalHotelAssig3\AnimalHotel\obj\Debug\AnimalHotel.StaffForm.resources
 C:\Users\moroz\Desktop\AnimalHotelAssig3\AnimalHotel\obj\Debug\AnimalHotel.csproj.CoreCompileInputs.cache
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.csprojResolveAssemblyReference.cache
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.FoodForm.resources
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.Form1.resources
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.Properties.Resources.resources
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.StaffForm.resources
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.csproj.GenerateResource.Cache
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.csproj.CoreCompileInputs.cache
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.exe
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\obj\Debug\AnimalHotel.pdb
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\bin\Debug\AnimalHotel.exe.config
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\bin\Debug\AnimalHotel.exe
+C:\Users\moroz\Documents\GitHub\AnimalHotel\AnimalHotel\AnimalHotel\bin\Debug\AnimalHotel.pdb
