@@ -456,5 +456,11 @@ namespace AnimalHotel
             {
             }
         }
+
+        private void UpdateList_Button_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(m_food_Mngr.ToStringArray());
+        }
     }
 }
