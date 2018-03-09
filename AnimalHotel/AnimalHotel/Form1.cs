@@ -16,7 +16,7 @@ namespace AnimalHotel
     {
         private AnimalManager m_anim_mngr;        
         private RecipeManager m_food_Mngr;
-
+        public bool check_Staff_or_Food;
        
 
         //Default Constructor
@@ -430,11 +430,14 @@ namespace AnimalHotel
         //Open FoodForm
         private void button_Add_Food_Click(object sender, EventArgs e)
         {
-            FoodForm form_Food = new FoodForm();
+            check_Staff_or_Food = true;
+            Form2 form_Food = new Form2(this);
             DialogResult dlgResult = form_Food.ShowDialog();
-            Recipe recipe;
+            
+           
             if (dlgResult == DialogResult.OK)
             {
+
                 //if(recipe.Ingredients <= 0)
             }
             else
@@ -445,9 +448,10 @@ namespace AnimalHotel
 
         private void button_Add_Staff_Click(object sender, EventArgs e)
         {
-            StaffForm form_Staff = new StaffForm();
+            check_Staff_or_Food = false;
+            Form2 form_Staff = new Form2(this);
             DialogResult dlgResult = form_Staff.ShowDialog();
-
+            
             if (dlgResult == DialogResult.OK)
             {
 
@@ -461,6 +465,14 @@ namespace AnimalHotel
         {
             listBox1.Items.Clear();
             listBox1.Items.AddRange(m_food_Mngr.ToStringArray());
+            List<String> list = new List<string>();
+            
+            
+        }
+
+        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

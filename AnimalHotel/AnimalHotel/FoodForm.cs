@@ -10,36 +10,50 @@ using System.Windows.Forms;
 
 namespace AnimalHotel
 {
-    public partial class FoodForm : Form
+    public partial class Form2 : Form
     {
         RecipeManager recipeMngr;
+        //Form1 form1;
        
-        public FoodForm()
+        public Form2(Form1 form1)
         {
-            InitializeComponent();
-            recipeMngr = new RecipeManager();
             
+            InitializeComponent();
+            if (form1.check_Staff_or_Food)
+            {
+                Adds_Lbl.Text = "Ingredients";
+                Form2_GrpBox.Text = "Add Ingredients: ";
+                this.Text = "Food Register";
+            }
+            else
+            {
+                Adds_Lbl.Text = "Qualification";
+                Form2_GrpBox.Text = "Add Qualifications: ";
+                this.Text = "Staff Planning";
+            }
+            recipeMngr = new RecipeManager();
+            //form1 = new Form1();
             InitializeGUI();
         }
 
         private void InitializeGUI()
         {
-            Food_Name_TextBox.Text = String.Empty;
-           
+            Name_TextBox.Text = String.Empty;
+            
         }
 
         private void button_Ok_Food_Click(object sender, EventArgs e)
         {
-            string name = Food_Name_TextBox.Text;
+            string name = Name_TextBox.Text;
             List<string> lista = new List<string>();
 
             Recipe recipe = new Recipe(name, lista);
 
             
 
-            for (int i = 0; i < Food_ListBox.Items.Count; i++)
+            for (int i = 0; i < ListBox.Items.Count; i++)
             {
-                lista.Add((string)Food_ListBox.Items[i]);
+                lista.Add((string)ListBox.Items[i]);
             }
 
             recipeMngr.Add(recipe);
@@ -49,7 +63,8 @@ namespace AnimalHotel
 
         private void Add_Food_Button_Click(object sender, EventArgs e)
         {
-            Food_ListBox.Items.Add(Food_Name_TextBox.Text);
+            ListBox.Items.Add(Adds_textBox.Text);
+            Adds_textBox.Text = String.Empty;
         }
 
         
@@ -66,8 +81,8 @@ namespace AnimalHotel
 
         private void UpdateList()
         {
-            Food_ListBox.Items.Clear();
-            Food_ListBox.Items.AddRange(recipeMngr.ToStringArray());
+            ListBox.Items.Clear();
+            ListBox.Items.AddRange(recipeMngr.ToStringArray());
         }
 
         private void Food_ListBox_SelectedIndexChanged(object sender, EventArgs e)

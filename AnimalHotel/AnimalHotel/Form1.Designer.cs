@@ -70,8 +70,8 @@
             this.button_Add_Food = new System.Windows.Forms.Button();
             this.button_Add_Staff = new System.Windows.Forms.Button();
             this.groupBox_Food_Details = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.UpdateList_Button = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.AddButton.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -486,14 +486,6 @@
             this.groupBox_Food_Details.TabStop = false;
             this.groupBox_Food_Details.Text = "Food details";
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(11, 20);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(317, 147);
-            this.listBox1.TabIndex = 25;
-            // 
             // UpdateList_Button
             // 
             this.UpdateList_Button.Location = new System.Drawing.Point(11, 174);
@@ -503,6 +495,15 @@
             this.UpdateList_Button.Text = "Update List";
             this.UpdateList_Button.UseVisualStyleBackColor = true;
             this.UpdateList_Button.Click += new System.EventHandler(this.UpdateList_Button_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(11, 20);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(317, 147);
+            this.listBox1.TabIndex = 25;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
             // Form1
             // 

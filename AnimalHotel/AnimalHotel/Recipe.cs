@@ -26,10 +26,6 @@ namespace AnimalHotel
 
         public int NrOfIngr { get { return numberOfIngredients; } }            
 
-        //Methods
-        public override string ToString()
-        {
-            return string.Format("   {0}     {1}   ", Name + Ingredients.ToString());
-        }
+       
     }
 }
