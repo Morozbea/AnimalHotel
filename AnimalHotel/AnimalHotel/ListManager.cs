@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace AnimalHotel
 {
-    class ListManager<T> : IListManager<T>//, IComparable<Animal>
+    public class ListManager<T> : IListManager<T>//, IComparable<Animal>
     {
         private List<T> list;
-   
         public ListManager()
         {
             list = new List<T>();
-         
         }
-
         //int IComparable<Animal>.CompareTo(Animal obj1)
         //{
         //    if (this.Age > obj1.Age) return 1;
@@ -23,20 +20,16 @@ namespace AnimalHotel
         //    if (this.Age < obj1.Age) return -1;
         //    return (0);
         //}
-
         //Fields
-        public List<T> m_list { get; set; }
-
+        public List<T> Property_list { get; set; }
         //Properties
         public int Count { get; }
-
         //Methods
         public void Add(T aType)
         {
             if (list != null)
-            {              
+            {
                 list.Add(aType);
-
             }
         }
         public void ChangeAt(T aType, int anIndex)
@@ -46,20 +39,19 @@ namespace AnimalHotel
         }
         public void CheckIndex(int index)
         {
-
-        }
+            list.ElementAt(index);
+        }       
         public void DeleteAll()
         {
-
+            list.Clear();
         }
         public void DeleteAt(int anindex)
         {
             list.RemoveAt(anindex);
         }
-        public T GetAt(int anindex)
+        public T GetAt(int index)
         {
-
-            return list[anindex];
+            return list[index];
         }
         public string[] ToStringArray()
         {
@@ -71,14 +63,13 @@ namespace AnimalHotel
             }
             return list_List;
         }
-        //public List<string> ToListString()
-        //{
-
-        //}
-
         public void Sort(IComparer<T> sorter)
         {
             list.Sort(sorter);
+        }
+        public IEnumerator<T> GetEnumerator()
+        {
+            return list.GetEnumerator();
         }
     }
 }

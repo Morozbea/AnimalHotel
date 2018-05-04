@@ -30,32 +30,18 @@ namespace AnimalHotel
         /// returns a gender
         /// </summary>
         /// <returns></returns>
-        Gender GenderOfAnimal
-        {
-            get;
-            set;
-        }
+        Gender GenderOfAnimal { get; set; }
 
         /// <summary>
         /// returns an ID
         /// </summary>
         /// <returns></returns>
-        int Id
-        {
-            get;
-            set;
-        }
+        int Id { get; set; }
 
         /// <summary>
         /// returns a Name
         /// </summary>
         /// <returns></returns>
-        string Name
-        {
-            get;
-            set;
-        }
-
-
+        string Name { get; set; }
     }
 }

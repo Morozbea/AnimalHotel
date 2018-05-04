@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace AnimalHotel
 {
-    interface IListManager<T> 
-    {
-        //Fields
-       
-
+    public interface IListManager<T>
+    {        
         //Properties
         int Count { get; }
-
         //Methods
         void Add(T aType);
         void ChangeAt(T aType, int anIndex);
@@ -22,7 +18,7 @@ namespace AnimalHotel
         void DeleteAt(int anindex);
         //T GetAt(int anindex);
         string[] ToStringArray();
-        //List<string> ToListString();
-
+        //Implemented for being able to iterate through the list (ListManager<string>) in recipe and staff
+        IEnumerator<T> GetEnumerator();        
     }
 }

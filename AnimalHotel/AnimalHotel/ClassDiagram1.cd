@@ -1,124 +1,219 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnimalHotel.AgeSorter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>AgeSorter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AnimalHotel.Animal" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACABQEAAAAAAAEAEAABAQAAAAAAAQAAABAAAAAAIA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="AnimalHotel.Birds" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+    <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAEAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
       <FileName>BirdFiles\Birds.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Chicken" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="0.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAQEABAAAAAEAAAABAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BirdFiles\Chicken.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Duck" Collapsed="true">
-    <Position X="2.75" Y="3.25" Width="1.5" />
+    <Position X="3" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQEABAAAAAEAAAABAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BirdFiles\Duck.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Eagle" Collapsed="true">
-    <Position X="5" Y="3.25" Width="1.5" />
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAQEABAAAAAEAAAABAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BirdFiles\Eagle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AnimalHotel.Form1" Collapsed="true">
-    <Position X="16" Y="0.5" Width="1.5" />
+  <Class Name="AnimalHotel.Creature" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACABAQEgCiAAIBIEABCAAAQCCAAoADAAEGAAwJAAEEA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAQAAABAA=</HashCode>
+      <FileName>Creature.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.FoodSchedule" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAQQAAAAAAAAAAQAABAQAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FoodSchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.Form1" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gGQJEVEgiiABJBYEABCCJgRGCFUoEBgikHIAwJBAOEI=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AnimalHotel.Cat" Collapsed="true">
-    <Position X="11.75" Y="3.25" Width="1.5" />
+  <Class Name="AnimalHotel.Form2" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
+      <HashCode>gAAEEAAIACACEIFAKALDEAACEIpEgIAACAAAAAAAAAA=</HashCode>
+      <FileName>Form2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.ListManager&lt;T&gt;">
+    <Position X="2.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIACgAAAAACABAgAAAQAAQABAIAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>ListManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AnimalHotel.Cat" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQEAAAAAAAEAAAABAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
       <FileName>MammalFiles\Cat.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Deer" Collapsed="true">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+    <Position X="9.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
+      <HashCode>AAAAAAQEAAAAAAAEAAAABAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
       <FileName>MammalFiles\Deer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Dog" Collapsed="true">
-    <Position X="9.5" Y="3.25" Width="1.5" />
+    <Position X="12" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
+      <HashCode>AAAAAAQEAAAAAAAEAAAABAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
       <FileName>MammalFiles\Dog.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Mammals" Collapsed="true">
-    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Position X="9.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>MammalFiles\Mammals.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="AnimalHotel.Animal" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+  <Class Name="AnimalHotel.NameSorterer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAACABAAAAAAAAAEAEAAAAQAAAAAAAQAAABAAAAAAIA=</HashCode>
-      <FileName>Other\Animal.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>NameSorterer.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AnimalHotel.AnimalManager" Collapsed="true">
-    <Position X="14.25" Y="0.5" Width="1.5" />
+    <Position X="5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAgAAAAAAAAAAAAAIABAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Other\AnimalManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Program" Collapsed="true">
-    <Position X="17.75" Y="0.5" Width="1.5" />
+    <Position X="18" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="AnimalHotel.Recipe" Collapsed="true">
+    <Position X="7" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAADQBAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Recipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.RecipeManager">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RecipeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.Staff" Collapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalHotel.StaffManager" Collapsed="true">
+    <Position X="5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StaffManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="AnimalHotel.Properties.Resources" Collapsed="true">
-    <Position X="14.25" Y="1.5" Width="1.5" />
+    <Position X="14.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="AnimalHotel.Properties.Settings" Collapsed="true">
-    <Position X="16" Y="1.5" Width="1.5" />
+    <Position X="16.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
+  <Interface Name="AnimalHotel.IAnimal" Collapsed="true">
+    <Position X="14.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABQEAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAnimal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AnimalHotel.IListManager&lt;T&gt;" Collapsed="true">
+    <Position X="16.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIACAAAAAACABAgAAAAAAQAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>IListManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Enum Name="AnimalHotel.Bird" Collapsed="true">
-    <Position X="14.25" Y="2.75" Width="1.5" />
+    <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIIAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enum\Bird.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="AnimalHotel.Category" Collapsed="true">
-    <Position X="16" Y="2.75" Width="1.5" />
+    <Position X="16.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enum\Category.cs</FileName>
     </TypeIdentifier>
   </Enum>
+  <Enum Name="AnimalHotel.EaterType" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Enum\EaterType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Enum Name="AnimalHotel.Gender" Collapsed="true">
-    <Position X="17.75" Y="2.75" Width="1.5" />
+    <Position X="19.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
       <FileName>Enum\Gender.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="AnimalHotel.Mammal" Collapsed="true">
-    <Position X="14.25" Y="3.5" Width="1.5" />
+    <Position X="14.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Enum\Mammal.cs</FileName>

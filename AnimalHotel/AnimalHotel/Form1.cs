@@ -14,10 +14,12 @@ namespace AnimalHotel
 {
     public partial class Form1 : Form
     {
-        private AnimalManager m_anim_mngr;        
-        private RecipeManager m_food_Mngr;
-        public bool check_Staff_or_Food;
-       
+        private AnimalManager m_anim_mngr;
+        private RecipeManager recipeManager;
+        private StaffManager staff_manager;
+        private ListManager<string> m_summaFoodStaff;
+
+        bool check_Staff_or_Food;
 
         //Default Constructor
         public Form1()
@@ -25,10 +27,10 @@ namespace AnimalHotel
             InitializeComponent();
             InitializeGui();
             m_anim_mngr = new AnimalManager();
-           
-            m_food_Mngr = new RecipeManager();
+            recipeManager = new RecipeManager();
+            staff_manager = new StaffManager();
+            m_summaFoodStaff = new ListManager<string>();            
         }
-
         //Default values
         private void InitializeGui()
         {
@@ -50,12 +52,7 @@ namespace AnimalHotel
 
             comboBoxEaterType.Items.Clear();
             comboBoxEaterType.Items.AddRange(Enum.GetNames(typeof(EaterType)));
-            this.comboBoxEaterType.SelectedIndex = (int)EaterType.Herbivore;
-
-            //if(string.IsNullOrEmpty(nameTxtBox.Text))
-            //{
-            //    AddAnimalButton.Enabled = false;
-            //}
+            this.comboBoxEaterType.SelectedIndex = (int)EaterType.Herbivore;            
         }
 
         // Add an animal Button
@@ -71,18 +68,13 @@ namespace AnimalHotel
                 MessageBox.Show("Nothing is selected!");
                 return;
             }
-
             //Read numbers from textbox
             int age_value = int.Parse(ageTxtBox.Text);
             int textbox1_value = int.Parse(textBox1.Text);
-
             Category cat = (Category)categoryCmb.SelectedIndex;
-
             m_anim_mngr.AddAnimal(CreateAnimal());
-
             //Update the listbox
             UpdateList();
-
             //Set the textboxes to empty after the animal is added and the combobox to default value
             nameTxtBox.Text = string.Empty;
             ageTxtBox.Text = string.Empty;
@@ -91,29 +83,17 @@ namespace AnimalHotel
             this.categoryCmb.SelectedIndex = (int)Category.Bird;
             this.genderCmb.SelectedIndex = (int)Gender.Male;
         }
-
         // Update listbox
         void UpdateList()
         {
             listBox_Animals.Items.Clear();
-            listBox_Animals.Items.AddRange(m_anim_mngr.ToStringArray());
-            List<String> list = new List<string>();
-            for (int i = 0; i < list.Count; i++)
-            {
-                Console.WriteLine(list[i]);
-            }
-            for (int i = 0; i < listBox_Animals.Items.Count; i++)
-            {
-                Console.WriteLine(listBox_Animals.Items[i]);
-            }
+            listBox_Animals.Items.AddRange(m_anim_mngr.ToStringArray());            
         }
-
         // Change the animals combobox after what is chosen Mammals or Birds
         private void categoryCmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (categoryCmb.SelectedIndex > -1)
             {
-
                 if (categoryCmb.SelectedIndex == 1)
                 {
                     animalObjCmb.Items.Clear();
@@ -130,7 +110,6 @@ namespace AnimalHotel
                 }
             }
         }
-
         // Update labels for Mammals or for Birds
         private void UpdateLabel(Category ctg)
         {
@@ -152,13 +131,11 @@ namespace AnimalHotel
                     }
             }
         }
-
         // Show the selected animals informations its their textboxes or comboboxes
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listBox_Animals.SelectedIndex > -1)
             {
-
                 Animal an = m_anim_mngr.GetAt(listBox_Animals.SelectedIndex);
 
                 genderCmb.SelectedIndex = (int)an.GenderOfAnimal;
@@ -256,7 +233,6 @@ namespace AnimalHotel
                 }
             }
         }
-
         //Create animal
         private Animal CreateAnimal()
         {
@@ -394,9 +370,6 @@ namespace AnimalHotel
         {
             e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
-
-
-
         /// <summary>
         /// Add, Change, Delete button for FoodSchedule!!! No needed now
         /// </summary>
@@ -427,52 +400,38 @@ namespace AnimalHotel
             //foodSchedule.DeleteFoodScheduleItem(listBox1.SelectedIndex);
         }
 
-        //Open FoodForm
+        //Open FoodForm and when ok is pressed the added recipe will be printed in form 1 listbox 1
         private void button_Add_Food_Click(object sender, EventArgs e)
         {
             check_Staff_or_Food = true;
-            Form2 form_Food = new Form2(this);
-            DialogResult dlgResult = form_Food.ShowDialog();
-            
-           
+            Form2 form2 = new Form2(check_Staff_or_Food);
+            DialogResult dlgResult = form2.ShowDialog();
             if (dlgResult == DialogResult.OK)
             {
-
-                //if(recipe.Ingredients <= 0)
-            }
-            else
-            {
-
-            }
+                Recipe re = form2.AddedRecipe;
+                recipeManager.Add(re);
+                UpdateListbox1BothFoodStaff();
+            }            
         }
-
+        //Open StaffForm and when ok is pressed the added staff will be printed in form 1 listbox 1
         private void button_Add_Staff_Click(object sender, EventArgs e)
         {
             check_Staff_or_Food = false;
-            Form2 form_Staff = new Form2(this);
-            DialogResult dlgResult = form_Staff.ShowDialog();
-            
+            Form2 form2 = new Form2(check_Staff_or_Food);
+            DialogResult dlgResult = form2.ShowDialog();
             if (dlgResult == DialogResult.OK)
             {
-
-            }
-            else
-            {
-            }
-        }
-
-        private void UpdateList_Button_Click(object sender, EventArgs e)
+                Staff staff = form2.AddedStaff;
+                staff_manager.Add(staff);
+                UpdateListbox1BothFoodStaff();
+            }            
+        }       
+        //Add both recipe and staff in the listbox
+        private void UpdateListbox1BothFoodStaff()
         {
             listBox1.Items.Clear();
-            listBox1.Items.AddRange(m_food_Mngr.ToStringArray());
-            List<String> list = new List<string>();
-            
-            
-        }
-
-        private void listBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
+            listBox1.Items.AddRange(staff_manager.ToStringArray());
+            listBox1.Items.AddRange(recipeManager.ToStringArray());
         }
     }
 }

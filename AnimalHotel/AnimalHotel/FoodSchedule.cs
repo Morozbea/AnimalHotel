@@ -30,10 +30,6 @@ namespace AnimalHotel
             m_foodDescriptionScript.Add(item);
             sg++;
         }
-
-
-
-
         //Done Methods but not used
         //Change a food schedule
         public void ChangeFoodScheduleItem(string item, int index)
@@ -48,12 +44,6 @@ namespace AnimalHotel
             m_foodDescriptionScript.RemoveAt(index);
         }
 
-        //
-        public string NoDescribeFeedingRequired()
-        {
-            return null;
-        }
-
         //Return an array of strings where every string represents a contact
         public string[] GetFoodSchedule()
         {
@@ -65,12 +55,5 @@ namespace AnimalHotel
             }
             return schema;
         }
-
-        //Get the animal at the selected index
-        public string GetScheduleAt(int index)
-        {
-            return m_foodDescriptionScript[index];
-        }
-        
     }
 }

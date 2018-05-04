@@ -6,26 +6,28 @@ using System.Threading.Tasks;
 
 namespace AnimalHotel
 {
-    class Recipe 
+    public class Recipe
     {
-        private List<string> m_ingredients;
-        private string m_name;
-        int numberOfIngredients;
-        public Recipe(string name,List<string> lista)
+        private ListManager<string> m_ingredients;
+        private string m_name;              
+        public Recipe(string name,ListManager<string> lista)
         {
-            m_ingredients = new List<string>();
+            m_ingredients = new ListManager<string>();
             m_name = String.Empty;
-            numberOfIngredients = 0;
             m_name = name;
-            m_ingredients = lista;
+            m_ingredients = lista;           
         }
-
-        //Properties
-        public List<string> Ingredients { get { return m_ingredients; } }
-        public string Name { get { return m_name; } set { value = m_name; } }
-
-        public int NrOfIngr { get { return numberOfIngredients; } }            
-
-       
+        //Property forn name of the recipe
+        public string Name { get { return m_name; } set { m_name = value; } }
+        //Print Recipes
+        public override string ToString()
+        {
+            string a = "";
+            foreach (string a1 in m_ingredients)
+            {
+                a += a1 + ",";
+            }
+            return string.Format(" {0}   {1}", Name, a);
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.Name_TextBox = new System.Windows.Forms.TextBox();
             this.Form2_GrpBox = new System.Windows.Forms.GroupBox();
-            this.ListBox = new System.Windows.Forms.ListBox();
+            this.Ing_listbox = new System.Windows.Forms.ListBox();
             this.Delete_Button = new System.Windows.Forms.Button();
             this.Change_Button = new System.Windows.Forms.Button();
             this.Add_Button = new System.Windows.Forms.Button();
@@ -50,7 +50,7 @@
             // 
             // Form2_GrpBox
             // 
-            this.Form2_GrpBox.Controls.Add(this.ListBox);
+            this.Form2_GrpBox.Controls.Add(this.Ing_listbox);
             this.Form2_GrpBox.Controls.Add(this.Delete_Button);
             this.Form2_GrpBox.Controls.Add(this.Change_Button);
             this.Form2_GrpBox.Controls.Add(this.Add_Button);
@@ -63,14 +63,14 @@
             this.Form2_GrpBox.TabStop = false;
             this.Form2_GrpBox.Text = "Add Ingredients";
             // 
-            // ListBox
+            // Ing_listbox
             // 
-            this.ListBox.FormattingEnabled = true;
-            this.ListBox.Location = new System.Drawing.Point(90, 70);
-            this.ListBox.Name = "ListBox";
-            this.ListBox.Size = new System.Drawing.Size(311, 95);
-            this.ListBox.TabIndex = 7;
-            this.ListBox.SelectedIndexChanged += new System.EventHandler(this.Food_ListBox_SelectedIndexChanged);
+            this.Ing_listbox.FormattingEnabled = true;
+            this.Ing_listbox.Location = new System.Drawing.Point(90, 70);
+            this.Ing_listbox.Name = "Ing_listbox";
+            this.Ing_listbox.Size = new System.Drawing.Size(311, 95);
+            this.Ing_listbox.TabIndex = 7;
+            this.Ing_listbox.SelectedIndexChanged += new System.EventHandler(this.Food_ListBox_SelectedIndexChanged);
             // 
             // Delete_Button
             // 
@@ -159,7 +159,7 @@
 
         private System.Windows.Forms.TextBox Name_TextBox;
         private System.Windows.Forms.GroupBox Form2_GrpBox;
-        private System.Windows.Forms.ListBox ListBox;
+        private System.Windows.Forms.ListBox Ing_listbox;
         private System.Windows.Forms.Button Delete_Button;
         private System.Windows.Forms.Button Change_Button;
         private System.Windows.Forms.Button Add_Button;
